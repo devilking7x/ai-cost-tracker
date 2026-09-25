@@ -10,6 +10,8 @@
 
 ![Demo](screenshots/demo.png)
 
+![Demo GIF](screenshots/demo.gif)
+
 ## ✨ Features
 
 - **Dashboard** — total spend, this month's spend, total tokens, top model by spend; spend-per-day area chart (30 days); spend-by-provider donut; spend-by-model bar chart
