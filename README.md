@@ -68,6 +68,23 @@ Everything runs in your browser tab. Usage logs, price overrides and budget live
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Bug reports and price updates are welcome.
 
+## ❓ FAQ
+
+**Where does my usage data go?**
+Nowhere. Everything is stored in your browser's localStorage — no account, no server, no tracking.
+
+**Are the built-in prices accurate?**
+They are estimates and provider pricing can change. You can override any model's price in the settings.
+
+**Which providers are supported?**
+OpenAI, Anthropic, Google, DeepSeek, xAI, and Mistral.
+
+**What CSV format does the import expect?**
+See the "CSV format" section above — date, provider, model, input tokens, output tokens.
+
+**Can I use it for my team's shared tracking?**
+It's designed for personal use (local storage). Export CSV/JSON to share reports with others.
+
 ## 📄 License
 
 MIT — see [LICENSE](LICENSE).
