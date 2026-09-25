@@ -23,6 +23,11 @@
 - **Backup** — export/import full JSON backup, clear-all with confirmation
 - **100% local** — localStorage only; no backend, no tracking, no API keys required
 
+
+### ❤️ Bada Dil, Chhoti Madad
+Ye tool free hai aur hamesha free rahega. Agar isne tumhara time ya paisa bachaya ho, to ek Star ⭐ de do aur chahe to sponsor kar do.
+[⭐ Star this repo](https://github.com/devilking7x/ai-cost-tracker) [☕ Sponsor](https://github.com/sponsors/devilking7x)
+
 ## 📥 CSV format
 
 ```csv
