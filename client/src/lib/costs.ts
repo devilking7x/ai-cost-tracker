@@ -188,8 +188,13 @@ export function monthKey(dateISO: string): string {
 
 export function isValidDateISO(s: string): boolean {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return false;
-  const d = new Date(s + "T00:00:00");
-  return !isNaN(d.getTime()) && d.toISOString().slice(0, 10) === s;
+  const [y, m, day] = s.split("-").map(Number);
+  if (m < 1 || m > 12 || day < 1 || day > 31) return false;
+  // Compare local calendar components (never toISOString) so the check is
+  // correct in every timezone, including UTC+ zones like IST where midnight
+  // local time is still the previous day in UTC.
+  const d = new Date(y, m - 1, day);
+  return d.getFullYear() === y && d.getMonth() === m - 1 && d.getDate() === day;
 }
 
 // ---------------------------------------------------------------------------
